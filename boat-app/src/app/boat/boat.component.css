@@ -1,0 +1,35 @@
+.card {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.example-full-width {
+  width:100%
+}
+
+.form {
+  width: 77% !important;
+}
+
+.mat-card {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.form {
+  margin: 0px auto;
+  width: 50%
+}
+
+.mat-raised-button {
+  margin: 10px;
+}

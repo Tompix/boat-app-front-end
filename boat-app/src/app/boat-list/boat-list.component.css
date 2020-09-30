@@ -1,0 +1,43 @@
+.box {
+  margin: 0px auto;
+  width: 80%;
+  top: 100px;
+}
+
+.example-full-width {
+  color:white;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.truncate-cell {
+  max-width: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+}
+
+.add-button {
+  position: absolute;
+  right: 8%;
+  top: 13%;
+}
+
+.mat-row {
+  cursor: pointer;
+}

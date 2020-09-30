@@ -1,0 +1,36 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Boat App</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon input-icon" aria-label="Example icon-button with heart icon" (click)="logout()">
+    <mat-icon>input</mat-icon>
+  </button>
+</mat-toolbar>
+
+<br/><br/>
+
+<div class="card">
+  <mat-card class="mat-card">
+    <form class="example-form">
+        <mat-form-field class="example-full-width form">
+          <mat-label>Name</mat-label>
+          <input matInput [(ngModel)]="boat.name" name="name" maxlength="30" required>
+        </mat-form-field>
+        <p>
+        <mat-form-field class="example-full-width form">
+          <mat-label>Message</mat-label>
+          <input matInput [(ngModel)]="boat.description" #message maxlength="500" name="description" required>
+          <mat-hint align="end">{{message.value.length}} / 500</mat-hint>
+        </mat-form-field>
+        <section>
+          <div class="example-button-row">
+            <button class="mat-raised-button" mat-raised-button (click)="goBack()">Back</button>
+            <button *ngIf="boat.id != 0" class="mat-raised-button" mat-raised-button color="warn" (click)="delete()">Delete</button>
+            <button [disabled]="(!boat.name || !boat.description)" class="mat-raised-button" mat-raised-button color="primary" (click)="save()">Save</button>
+          </div>
+        </section>
+      </form>
+  </mat-card>
+</div>

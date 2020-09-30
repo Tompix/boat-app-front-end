@@ -1,0 +1,1 @@
+start cmd /k ng serve --port 4200 --open
