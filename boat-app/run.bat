@@ -1,1 +1,1 @@
-start cmd /k ng serve --port 4200 --open
+start cmd /k npm install --save-dev @angular-devkit/build-angular & ng serve --port 4200 --open
