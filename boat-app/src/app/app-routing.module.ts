@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'boats', component: BoatListComponent },
   { path: 'boat/:id', component: BoatComponent },
-  { path: '', component: BoatListComponent }
+  { path: '', component: LoginComponent }
 ];
 
 @NgModule({
