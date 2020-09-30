@@ -10,4 +10,4 @@ Launch application with 'run.bat' file in root folder
 ## Authentification
 Login => user
 
-Password: password
+Password => password
