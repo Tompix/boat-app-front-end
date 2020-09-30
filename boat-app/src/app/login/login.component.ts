@@ -18,12 +18,8 @@ export class LoginComponent implements OnInit {
     ngOnInit() {
         sessionStorage.setItem('token', '');
     }
-    
+
     login() {
       this.loginService.login(this.model.username, this.model.password);
-    }
-
-    logout() {
-      this.loginService.logout();
     }
 }

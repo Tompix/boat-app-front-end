@@ -52,8 +52,4 @@ export class BoatComponent implements OnInit {
   delete(): void {
     this.boatService.deleteBoat(this.id).subscribe(()=>this._router.navigateByUrl('/boats'));
   }
-
-  logout() {
-    this.loginService.logout();
-  }
 }

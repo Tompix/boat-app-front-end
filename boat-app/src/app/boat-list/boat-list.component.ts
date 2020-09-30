@@ -36,8 +36,4 @@ export class BoatListComponent {
   public updateBoat(item) {
     this._router.navigateByUrl('/boat/'+item.id);
   }
-
-  logout() {
-    this.loginService.logout();
-  }
 }

@@ -1,28 +1,17 @@
-<mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>Boat App</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon input-icon" aria-label="Example icon-button with heart icon" (click)="logout()">
-      <mat-icon>input</mat-icon>
-    </button>
-  </mat-toolbar>
-  <br/>
-  <br/>
-  <mat-card class="example-card">
-    <form class="example-form" name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+
+<mat-card class="example-card">
+  <form class="example-form" name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+      <mat-form-field class="example-full-width form">
+        <mat-label>Login</mat-label>
+        <input matInput type="text" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+      </mat-form-field>
+      <td>
         <mat-form-field class="example-full-width form">
-          <mat-label>Login</mat-label>
-          <input matInput type="text" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+          <mat-label>Password</mat-label>
+          <input matInput type="password" name="password" [(ngModel)]="model.password" #password="ngModel" required />
         </mat-form-field>
-        <td>
-          <mat-form-field class="example-full-width form">
-            <mat-label>Password</mat-label>
-            <input matInput type="password" name="password" [(ngModel)]="model.password" #password="ngModel" required />
-          </mat-form-field>
-          <div class="example-button-row">
-            <button [disabled]="(!model.username || !model.password)" class="mat-raised-button" mat-raised-button color="primary">Login</button>
-          </div>
-    </form>
-  </mat-card>
+        <div class="example-button-row">
+          <button [disabled]="(!model.username || !model.password)" class="mat-raised-button" mat-raised-button color="primary">Login</button>
+        </div>
+  </form>
+</mat-card>

@@ -8,10 +8,6 @@
   color:white;
 }
 
-.example-spacer {
-  flex: 1 1 auto;
-}
-
 .truncate-cell {
   max-width: 60px;
   white-space: nowrap;

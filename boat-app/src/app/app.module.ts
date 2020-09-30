@@ -20,6 +20,7 @@ import {LoginComponent} from './login/login.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {BoatListComponent} from './boat-list/boat-list.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -47,7 +48,8 @@ import {BoatListComponent} from './boat-list/boat-list.component';
     AppComponent,
     BoatComponent,
     LoginComponent,
-    BoatListComponent
+    BoatListComponent,
+    ToolbarComponent
   ],
   bootstrap: [ AppComponent ]
 })
