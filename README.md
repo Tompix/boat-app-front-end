@@ -5,9 +5,9 @@ Boat app is a application for create, update, read, delete and list boats (CRUDL
 For run application, you should have node.js
 
 ## Installation
-Launch application with 'run.bat' file in root folder. If server not running, run 'ng serve --open' in cmd
+Launch application with 'run.bat' file in root folder
 
 ## Authentification
 Login => user
 
-Password: password
+Password => password
