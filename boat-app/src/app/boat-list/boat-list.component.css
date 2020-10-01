@@ -1,13 +1,3 @@
-.box {
-  margin: 0px auto;
-  width: 80%;
-  top: 100px;
-}
-
-.example-full-width {
-  color:white;
-}
-
 .truncate-cell {
   max-width: 60px;
   white-space: nowrap;
@@ -15,12 +5,12 @@
   text-overflow: ellipsis;
 }
 
-table {
-  width: 100%;
+.mat-elevation-z8 {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.mat-form-field {
-  font-size: 14px;
+table {
   width: 100%;
 }
 
@@ -31,7 +21,7 @@ td, th {
 .add-button {
   position: absolute;
   right: 8%;
-  top: 13%;
+  top: 15%;
 }
 
 .mat-row {

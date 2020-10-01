@@ -1,10 +1,16 @@
-.card {
-  width: 90%;
-  margin: 0px auto;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+
+.button {
+  width: 100%;
+  white-space: initial;
 }
 
 .example-form {
-  width: 40%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -12,13 +18,12 @@
   width:100%
 }
 
-.form {
-  width: 77% !important;
+.example-full-width-name {
+  width:50%
 }
 
 .mat-card {
-  width: 90%;
-  margin: 0px auto;
+  padding-top: 3%;
 }
 
 .form {

@@ -1,11 +1,15 @@
 .example-card {
-  margin: 0px auto;
+  margin: 0 auto;
   width: 20%;
 }
 
 .example-form {
-  margin: 0px auto;
-  width: 90%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.example-full-width {
+  width: 100°%;
 }
 
 .example-button-row {
