@@ -31,8 +31,8 @@ export class BoatService {
   }
 
   updateBoat(boat: Boat): Observable<any> {
-    const url = `${this.boatsUrl}/update/${boat.id}`;
-    return this.http.post(url, boat, this.httpOptions).pipe(
+    const url = `${this.boatsUrl}/${boat.id}`;
+    return this.http.put(url, boat, this.httpOptions).pipe(
       tap(_ => this.log(`updated boat id=${boat.id}`)),
       catchError(this.handleError<any>('updateBoat'))
     );
@@ -47,9 +47,9 @@ export class BoatService {
 
   deleteBoat(boat: Boat | number): Observable<any> {
     const id = typeof boat === 'number' ? boat : boat.id;
-    const url = `${this.boatsUrl}/delete/${id}`;
+    const url = `${this.boatsUrl}/${id}`;
 
-    return this.http.get(url, this.httpOptions).pipe(
+    return this.http.delete(url, this.httpOptions).pipe(
       tap(_ => this.log(`deleted boat id=${id}`)),
       catchError(this.handleError<Boat>('deleteBoat'))
     );

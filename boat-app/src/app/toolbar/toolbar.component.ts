@@ -8,12 +8,7 @@ import { LoginService } from '../service/login.service';
 })
 export class ToolbarComponent {
 
-  isLoged : boolean;
-
-  constructor(private loginService: LoginService) {
-    this.isLoged = sessionStorage.getItem('token') == "" ? false : true;
-  }
-
+  constructor(private loginService: LoginService) {}
 
   logout() {
     this.loginService.logout();
