@@ -2,7 +2,6 @@ import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
-import {HttpClient,HttpParams, HttpHeaders} from '@angular/common/http';
 import { Router } from '@angular/router';
 import { LoginService } from '../service/login.service';
 import { BoatService } from '../service/boat.service';
@@ -20,7 +19,7 @@ export class BoatListComponent {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  constructor(private boatService: BoatService, private _router: Router, private _httpClient: HttpClient, private loginService: LoginService) {
+  constructor(private boatService: BoatService, private _router: Router, private loginService: LoginService) {
       boatService.getBoatList().subscribe(data => {
         this.dataSource = new MatTableDataSource(data);
 

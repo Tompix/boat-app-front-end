@@ -10,7 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class LoginService {
 
-  constructor(private http: HttpClient,private _snackBar: MatSnackBar,private _router: Router,) { }
+  constructor(private http: HttpClient,private _snackBar: MatSnackBar,private _router: Router) { }
 
   login(username,password) {
     let url = 'http://localhost:8080/login';
